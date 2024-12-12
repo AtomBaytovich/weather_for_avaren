@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <section class="main">
+        <div class="container">
+            <div class="card temperature">
+                <p class="value">--°C</p>
+                <img class="icon" src="icons/temp.svg" alt="Temperature Icon">
+            </div>
+            <div class="card moisture">
+                <p class="value">--%</p>
+                <img class="icon" src="icons/water.svg" alt="Moisture Icon">
+            </div>
+            <div class="card status">
+                <p class="value">--</p>
+                <img class="icon" src="icons/close.svg" alt="Status Icon" id="icon">
+            </div>
+        </div>
+    </section>
+
+    <section class="chart-section">
+        <canvas id="dataChart" width="830" height="415"></canvas>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
